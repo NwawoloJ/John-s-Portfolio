@@ -118,7 +118,7 @@ export const About = () => {
                     <Code2 size={24} className="text-white" />
                   </div>
                   <div>
-                    <p className="text-2xl font-bold text-white">5+</p>
+                    <p className="text-2xl font-bold text-white">1</p>
                     <p className="text-sm text-white/60">Years Exp.</p>
                   </div>
                 </div>
@@ -189,9 +189,9 @@ export const About = () => {
             {/* Stats */}
             <div ref={statsRef} className="grid grid-cols-3 gap-6">
               {[
-                { icon: Code2, value: "50+", label: "Projects" },
-                { icon: Palette, value: "30+", label: "Clients" },
-                { icon: Zap, value: "100%", label: "Satisfaction" },
+                { icon: Code2, value: "0", label: "Projects" },
+                { icon: Palette, value: "0", label: "Clients" },
+                { icon: Zap, value: "0%", label: "Satisfaction" },
               ].map(({ icon: Icon, value, label }) => (
                 <div key={label} className="text-center">
                   <div className="w-12 h-12 rounded-xl bg-purple-500/10 flex items-center justify-center mx-auto mb-3">
