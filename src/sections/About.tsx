@@ -1,7 +1,7 @@
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { Download, Code2, Palette, Zap, Users } from "lucide-react";
+import { Download, Code2, Palette, Zap } from "lucide-react";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -73,7 +73,7 @@ export const About = () => {
 
   const handleDownloadCV = () => {
     const link = document.createElement("a");
-    link.href = "John_Nwawolo_CV (2).pdf"; // This should be in your public folder
+    link.href = "/John_Nwawolo_CV (2).pdf"; // This should be in your public folder
     link.download = "John_Nwawolo_CV (2).pdf";
     document.body.appendChild(link);
     link.click();
@@ -107,6 +107,15 @@ export const About = () => {
                   className="w-full h-full object-cover"
                 />
 
+                {/* The Download Button */}
+                <div className="flex flex-col items-center justify-center mt-6">
+                  <a
+                    href="/Nwabueze_Nwawolo_CV.pdf"
+                    download="Nwabueze_John_Nwawolo_CV"
+                    className="inline-block px-6 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors shadow-md">
+                    Download CV
+                  </a>
+                </div>
                 {/* Overlay Gradient */}
                 <div className="absolute inset-0 bg-gradient-to-t from-void/80 via-transparent to-transparent" />
               </div>
