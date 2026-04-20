@@ -107,15 +107,6 @@ export const About = () => {
                   className="w-full h-full object-cover"
                 />
 
-                {/* The Download Button */}
-                <div className="flex flex-col items-center justify-center mt-6">
-                  <a
-                    href="/Nwabueze_Nwawolo_CV.pdf"
-                    download="Nwabueze_John_Nwawolo_CV"
-                    className="inline-block px-6 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors shadow-md">
-                    Download CV
-                  </a>
-                </div>
                 {/* Overlay Gradient */}
                 <div className="absolute inset-0 bg-gradient-to-t from-void/80 via-transparent to-transparent" />
               </div>
@@ -187,11 +178,10 @@ export const About = () => {
               ))}
             </div>
 
-            {/* Download CV Button */}
+            {/* Trigger the function with this button */}
             <button
               onClick={handleDownloadCV}
-              className="btn-primary flex items-center gap-2 group mb-12">
-              <Download size={18} />
+              className="px-6 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors shadow-lg">
               Download CV
             </button>
 
