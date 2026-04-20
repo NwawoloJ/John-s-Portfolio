@@ -102,7 +102,7 @@ export const About = () => {
               {/* Image Frame */}
               <div className="relative w-full h-full rounded-2xl overflow-hidden border border-white/10">
                 <img
-                  src="/portrait.jpg"
+                  src=""
                   alt="John Nwawolo"
                   className="w-full h-full object-cover"
                 />
@@ -119,7 +119,7 @@ export const About = () => {
                   </div>
                   <div>
                     <p className="text-2xl font-bold text-white">1</p>
-                    <p className="text-sm text-white/60">Years Exp.</p>
+                    <p className="text-sm text-white/60">Year Exp.</p>
                   </div>
                 </div>
               </div>
@@ -147,7 +147,7 @@ export const About = () => {
             <div className="space-y-4 text-white/70 text-lg leading-relaxed mb-8">
               <p>
                 I'm John Nwawolo, a passionate Frontend Developer based in
-                Lagos, Nigeria. With over 1 years of experience in web
+                Lagos, Nigeria. With over 1 year of experience in web
                 development, I specialize in creating immersive, interactive,
                 and visually stunning web applications.
               </p>
