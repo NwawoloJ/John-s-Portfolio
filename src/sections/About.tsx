@@ -1,7 +1,7 @@
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { Download, Code2, Palette, Zap } from "lucide-react";
+import { Download, Code2, Palette, Zap, Users } from "lucide-react";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -73,8 +73,8 @@ export const About = () => {
 
   const handleDownloadCV = () => {
     const link = document.createElement("a");
-    link.href = "/"; // This should be in your public folder
-    link.download = "my-cv.pdf";
+    link.href = "John_Nwawolo_CV (2).pdf"; // This should be in your public folder
+    link.download = "John_Nwawolo_CV (2).pdf";
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
